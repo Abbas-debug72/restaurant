@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-forest: #16231d;
+  --color-forest-deep: #0e1713;
+  --color-forest-soft: #1e322a;
+  --color-forest-light: #2a4137;
+  --color-forest-muted: #3e5a4d;
+  --color-brass: #c2a24c;
+  --color-brass-light: #d6bc74;
+  --color-brass-dark: #9c7f35;
+  --color-brass-pale: #e7d9b4;
+  --color-cream: #f4eee1;
+  --color-cream-light: #faf7ef;
+  --color-cream-dark: #eae1cc;
+  --color-ink: #24211b;
+  --color-sage: #7c8b78;
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #faf7ef;
+  --foreground: #24211b;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+::selection {
+  background: #c2a24c;
+  color: #0e1713;
+}
+
+:focus-visible {
+  outline: 2px solid #c2a24c;
+  outline-offset: 2px;
+}
+
+/* Fine hairline used under section headings */
+.hairline {
+  height: 1px;
+  background: linear-gradient(to right, #c2a24c, transparent);
+}
+
+/* Radix Accordion open/close animations */
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}

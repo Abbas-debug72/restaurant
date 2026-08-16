@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Ember & Vine",
-  url: "https://ember-vine.example.com",
+  url: "https://restaurant.gat6.vercel.app",
   tagline: "Seasonal · Wood-Fired · Tasting",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ember & Vine is a seasonal, wood-fired tasting experience in the heart of the city.",

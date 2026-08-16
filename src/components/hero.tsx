@@ -19,7 +19,7 @@ export default function Hero() {
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-forest-deep via-forest-deep/45 to-forest-deep/20"
+        className="absolute inset-0 bg-forest-deep/30 bg-gradient-to-t from-forest-deep via-forest-deep/60 to-forest-deep/45"
       />
       <div className="relative mx-auto w-full max-w-7xl px-6 pb-20 pt-40 lg:px-10">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-brass">
